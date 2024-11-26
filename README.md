@@ -25,7 +25,7 @@ The main objective of this project is to implement these schemes to solve the **
 $ Getting Started 
 1. Clone the repository:
    git clone https://github.com/Immaculate-07/Consitency-Stability-Convergence-for-Finite-Difference-Scheme
-   cd Consitency-Stability-Convergence-for-Finite-Difference-Scheme
+   cd Consistency-Stability-Convergence-for-Finite-Difference-Scheme
 
 ## Problem
 
