@@ -25,7 +25,9 @@ The main objective of this project is to implement these schemes to solve the **
 $ Getting Started 
 1. Clone the repository:
    git clone https://github.com/Immaculate-07/Consitency-Stability-Convergence-for-Finite-Difference-Scheme
+   
    cd Consistency-Stability-Convergence-for-Finite-Difference-Scheme
+2. Open MATLAB and navigate to p
 
 ## Problem
 
@@ -66,4 +68,26 @@ $$
 
 ## Documentation
 The project is accompanied by a detailed report which contains the Analysis of Stability and Consistency.
+
+## Results
+
+Here are the results from applying the finite difference schemes to the heat equation:
+
+### Result 1: Crank-Nicolson Scheme
+
+The following plot shows the temperature distribution over time using the Crank-Nicolson scheme.
+
+![Crank-Nicolson Scheme Result](images/result1.png)
+
+### Result 2: Forward Euler Scheme
+
+The plot below shows the temperature distribution using the Forward Euler scheme.
+
+![Forward Euler Scheme Result](images/result2.png)
+
+### Comparison of Schemes
+
+Here’s a comparison of the results from different finite difference schemes applied to the heat equation.
+
+![Comparison of Schemes](images/comparison.png)
 
