@@ -35,7 +35,7 @@ disp(floor(pInf(1)))
 figure(2*i+1)
 loglog(dts, err_2, '-r*'); hold on;
 loglog(dts, err_Inf, '-k*'); hold on;
-xlabel('Final Time \Delta t');
+xlabel('Final Time T_f');
 ylabel('Error')
 legend('Norm_2','Norm_{inf}')
 title(sprintf('Convergence plot (Order of convergence = %.0f)', p2(1)));
