@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a MATLAB implementation of four finite difference schemes for solving the **Heat Equation**:
+This repository contains a MATLAB implementation of three finite difference schemes for solving the **Heat Equation**:
 
 $$
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
@@ -12,17 +12,17 @@ where:
 -  $u(x,t)$  is the temperature at position \( x \) and time \( t \),
 -  $\alpha$ is the thermal diffusivity constant.
 
-The following four finite difference schemes are implemented to solve this equation:
+The following three finite difference schemes are implemented to solve this equation:
 
 - Crank-Nicolson Scheme:     $$\frac{{U_i^{n + 1} - U_i^n}}{\tau } = \frac{1}{{2{h^2}}}\left[ {U_{i + 1}^{n + 1} - 2U_i^{n + 1} + U_{i - 1}^{n + 1} + U_{i + 1}^n - 2U_i^n + U_{i - 1}^n} \right]$$
  
 - Forward Euler Scheme:    $$\frac{{U_i^{n + 1} - U_i^n}}{\tau } = \frac{1}{{{h^2}}}\left( {U_{i - 1}^n - 2U_i^n + U_{i + 1}^n} \right)$$
-- Central Difference for Time Derivative:     $$\frac{{U_i^{n + 1} - U_i^{n-1}}}{{2\tau }} = \frac{{U_{i+1}^n - 2U_i^n + U_{i - 1}^n}}{{{h^2}}}$$
+
 - Stabilized Central Time Scheme:    $$\frac{{U_i^{n + 1} - U_i^{n - 1}}}{{2\tau }} = \frac{1}{{{h^2}}}\left( {U_{i + 1}^n - U_i^{n + 1} - U_i^{n - 1} + U_{i - 1}^n} \right)$$
 
 The main objective of this project is to implement these schemes to solve the **1D Heat Equation** with zero Dirichlet boundary conditions and an initial condition of your choice, over the interval  (0,1).
 
-$ Getting Started 
+## Getting Started 
 1. Clone the repository:
    git clone https://github.com/Immaculate-07/Consitency-Stability-Convergence-for-Finite-Difference-Scheme
    
@@ -65,29 +65,50 @@ u(x,t) = \exp(-\pi^2 t) \sin(\pi x)
 $$
 
 
-
-## Documentation
-The project is accompanied by a detailed report which contains the Analysis of Stability and Consistency.
-
 ## Results
 
 Here are the results from applying the finite difference schemes to the heat equation:
 
 ### Result 1: Crank-Nicolson Scheme
 
-The following plot shows the temperature distribution over time using the Crank-Nicolson scheme.
 
-![Crank-Nicolson Scheme Result](images/result1.png)
+| <img src="src/cn1.png" alt="Image 1" style="width:75%;"/> | <img src="src/cn2.png" alt="Image 2" style="width:75%;"/> |
+|-----------------------------------------------------------|-----------------------------------------------------------|
+| Crank-Nicolson solution with dt=0.0125                    | Plot of Exact and Approximated solution at T = 0.5        |
+
+
+| <img src="src/cn3.png" alt="Image 3" style="width:50%;"/> |
+|-----------------------------------------------------------|
+| Convergence Plot for Crank-Nicolson Solution              |
+
 
 ### Result 2: Forward Euler Scheme
 
-The plot below shows the temperature distribution using the Forward Euler scheme.
+| <img src="src/fe1.png" alt="Image 4" style="width:75%;"/> | <img src="src/fe2.png" alt="Image 5" style="width:75%;"/> |
+|-----------------------------------------------------------|-----------------------------------------------------------|
+| Forward Euler solution with dt=0.0025                     | Plot of Exact and Approximated solution at T = 0.5        |
 
-![Forward Euler Scheme Result](images/result2.png)
 
-### Comparison of Schemes
+| <img src="src/fe3.png" alt="Image 6" style="width:50%;"/> |
+|-----------------------------------------------------------|
+| Convergence Plot for Forward Euler                        |
 
-Here’s a comparison of the results from different finite difference schemes applied to the heat equation.
+### Result 3: Stabilized Centered Time
 
-![Comparison of Schemes](images/comparison.png)
+| <img src="src/st1.png" alt="Image 7" style="width:75%;"/> | <img src="src/st2.png" alt="Image 8" style="width:75%;"/> |
+|-----------------------------------------------------------|-----------------------------------------------------------|
+| Stabilaized Central Time Solution of Heat Equation with dt=0.0053  | Plot of Exact and Approximated solution at T = 0.5 |
+
+
+| <img src="src/st3.png" alt="Image 9" style="width:50%;"/> |
+|-----------------------------------------------------------|
+| Convergence Plot for Stabilaized Central Time             |
+
+
+
+## Documentation
+The project is accompanied by a detailed report which contains the Analysis of Stability and Consistency.
+https://www.overleaf.com/read/zgscckpzsjmw#b41dc3
+
+
 
