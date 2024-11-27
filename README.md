@@ -22,12 +22,19 @@ The following three finite difference schemes are implemented to solve this equa
 
 The main objective of this project is to implement these schemes to solve the **1D Heat Equation** with zero Dirichlet boundary conditions and an initial condition of your choice, over the interval  (0,1).
 
-## Getting Started 
-1. Clone the repository:
-   git clone https://github.com/Immaculate-07/Consitency-Stability-Convergence-for-Finite-Difference-Scheme
+## Prerequisites
+* MATLAB R2015 or later
+
+## Project Structure
+1. Crank Nicholson Scheme Implementation/:
+   - ![CNS.m](Crank_Nicholson Scheme_Implementation/CNS.m): Crank-Nicholson function which generates
+     * A Mesh Plot to the solution to the heat equation
+     * A plot of $U_{Approx}$ and $U_{exact}$ at the final time
+   - MainCNS.m: An implementation of CNS for different N's
+   
    
    cd Consistency-Stability-Convergence-for-Finite-Difference-Scheme
-2. Open MATLAB and navigate to p
+4. Open MATLAB and navigate to p
 
 ## Problem
 
@@ -102,7 +109,7 @@ Here are the results from applying the finite difference schemes to the heat equ
 
 | <img src="src/st3.png" alt="Image 9" style="width:50%;"/> |
 |-----------------------------------------------------------|
-| Convergence Plot for Stabilaized Central Time             |
+| Convergence Plot for Stabilized Central Time             |
 
 
 
