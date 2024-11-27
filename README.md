@@ -27,14 +27,15 @@ The main objective of this project is to implement these schemes to solve the **
 
 ## Project Structure
 1. Crank Nicholson Scheme Implementation/:
-   - ![CNS.m](Crank_Nicholson Scheme_Implementation/CNS.m): Crank-Nicholson function which generates
+   - CNS.m: Crank-Nicholson function which generates
      * A Mesh Plot to the solution to the heat equation
      * A plot of $U_{Approx}$ and $U_{exact}$ at the final time
-   - MainCNS.m: An implementation of CNS for different N's
+   - MainCNS.m: A script that contains the implementation of CNS for different values of N which generates
+     * Results for each N
+     * Convergence plot.
+ 
    
-   
-   cd Consistency-Stability-Convergence-for-Finite-Difference-Scheme
-4. Open MATLAB and navigate to p
+
 
 ## Problem
 
@@ -115,7 +116,7 @@ Here are the results from applying the finite difference schemes to the heat equ
 
 ## Documentation
 The project is accompanied by a detailed report which contains the Analysis of Stability and Consistency.
-https://www.overleaf.com/read/zgscckpzsjmw#b41dc3
+![File](docs/ConsistencyStabilityConvergence.pdf)
 
 
 
