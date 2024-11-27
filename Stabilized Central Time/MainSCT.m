@@ -11,7 +11,7 @@ u_Exact = @(x,t) exp(-pi^2*t) * sin(pi*x);
 
 % % Error Plot
 % 
-N = [80,90,100];
+N = [75,80,85,90,95];
 dts = zeros(1,length(N));
 % 
 err_2 = zeros(1,length(N));
@@ -32,6 +32,7 @@ disp(floor(p2(1)))
 pInf = polyfit(log(dts),log(err_Inf),1);
 disp(floor(pInf(1)))
 
+% Convergence Plot
 figure(2*i+1)
 loglog(dts, err_2, '-r*'); hold on;
 loglog(dts, err_Inf, '-k*'); hold on;
